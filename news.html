@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ข่าวสาร</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: #004080;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    /* เมนูนำทาง */
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 15px 0 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 0 10px;
+    }
+    nav ul li a {
+      color: #004080;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav ul li a:hover,
+    nav ul li a.active {
+      background: #0066cc;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    .news-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    .news-item:last-child {
+      border-bottom: none;
+    }
+    .date {
+      font-size: 13px;
+      color: #666;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 5px 0;
+      color: #004080;
+    }
+    .desc {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .read-more {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 6px 12px;
+      background: #004080;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 13px;
+      transition: background 0.3s;
+    }
+    .read-more:hover {
+      background: #0066cc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #004080;
+      color: white;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+<header>
+    <div class="container">
+      <h1>&nbsp;</h1>
+      <h1>ข่าวสาร</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="about.html">เกี่ยวกับแผนก</a></li>
+          <li><a href="staff.html">บุคลากร</a></li>
+          <li><a href="curriculum.html">หลักสูตร</a></li>
+          <li><a href="activities.html">ผลงาน & กิจกรรม</a></li>
+          <li><a href="career.html">เส้นทางอาชีพ</a></li>
+          <li><a href="news.html" class="active">ข่าวสาร</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+  </div>
+  </header>
+
+  <div class="container">
+    <h2>ประกาศ / ข่าวประชาสัมพันธ์</h2>
+
+    <div class="news-item">
+      <div class="date">วันที่ 1 กันยายน 2565</div>
+      <div class="title">ประกาศรับสมัครนักศึกษาใหม่ ปีการศึกษา 2566</div>
+      <div class="desc">
+        วิทยาลัยเทคนิค... เปิดรับสมัครนักศึกษาใหม่ ระดับ ปวช. และ ปวส.
+        ในสาขาวิชาต่าง ๆ <br>
+        <a href="news1.html" class="read-more">อ่านต่อ</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="date">วันที่ 25 สิงหาคม 2565</div>
+      <div class="title">กิจกรรมปฐมนิเทศนักศึกษาใหม่ ประจำปีการศึกษา 2565</div>
+      <div class="desc">
+        วิทยาลัยเทคนิค... จัดกิจกรรมปฐมนิเทศนักศึกษาใหม่ ณ หอประชุมใหญ่ <br>
+        <a href="news2.html" class="read-more">อ่านต่อ</a>
+      </div>
+    </div>
+
+    <div class="news-item">
+      <div class="date">วันที่ 10 สิงหาคม 2565</div>
+      <div class="title">อบรมเชิงปฏิบัติการ “ทักษะดิจิทัลเพื่ออนาคต”</div>
+      <div class="desc">
+        สาขาวิชาธุรกิจดิจิทัล ได้จัดการอบรมเชิงปฏิบัติการ สำหรับนักศึกษาและบุคลากร <br>
+        <a href="news3.html" class="read-more">อ่านต่อ</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 วิทยาลัยเทคนิค... สงวนลิขสิทธิ์</p>
+  </footer>
+</body>
+</html>

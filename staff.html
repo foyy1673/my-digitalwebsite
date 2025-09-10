@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>บุคลากร</title>
+  <style>
+    /* ========== CSS รวมทั้งหมด ========== */
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #004080;
+    }
+
+    header img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      margin: 15px 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #004080;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #0066cc;
+    }
+
+    /* Main container */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #004080;
+      color: white;
+      font-size: 13px;
+    }
+
+    /* Staff Grid */
+    .staff-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .staff-grid .card {
+      background: #fefefe;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      text-align: center;
+      width: 200px;
+    }
+
+    .staff-grid .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .staff-grid .card p, .staff-grid .card a {
+      margin: 5px 0;
+      font-size: 14px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .staff-grid .card a:hover {
+      color: #004080;
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 20px;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        width: 95%;
+        padding: 15px;
+      }
+      .staff-grid {
+        gap: 15px;
+      }
+      .staff-grid .card {
+        width: 45%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .staff-grid .card {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>บุคลากร</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="about.html">เกี่ยวกับแผนก</a></li>
+          <li><a href="staff.html">บุคลากร</a></li>
+          <li><a href="curriculum.html">หลักสูตร</a></li>
+          <li><a href="activities.html">ผลงาน & กิจกรรม</a></li>
+          <li><a href="career.html">เส้นทางอาชีพ</a></li>
+          <li><a href="news.html">ข่าวสาร</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Staff Section -->
+  <section class="section">
+    <div class="container staff-grid">
+      <div class="card">
+        <img src="images/J pe.jpg" alt="หัวหน้าแผนก">
+        <p><strong>อาจารย์ ปัญจา พรรณประสาธ์</strong></p>
+        <p>ครู (พนักงานราชการ)</p>
+        <p>หัวหน้าแผนก</p>
+      </div>
+
+      <div class="card">
+        <img src="images/J supo.jpg" alt="ผู้ช่วยหัวหน้าแผนก">
+        <p><a href="https://sites.google.com/aitc.ac.th/e-portfolio-suporn/ขอมลสวนบคคล/ประวตสวนตว" target="_blank">อาจารย์สุพร คุ้มรักษา</a></p>
+        <p>ครู (พนักงานราชการ)</p>
+        <p>ผู้ช่วยหัวหน้าแผนก</p>
+      </div>
+
+      <div class="card">
+        <img src="images/j taipob.jpg" alt="อาจารย์">
+        <p><a href="https://sites.google.com/aitc.ac.th/traiphop/home" target="_blank">อาจารย์ไตรภพ ไชยชมภู</a></p>
+        <p>ครูจ้างสอน</p>
+        <p>อาจารย์ผู้สอน</p>
+      </div>
+    </div>
+
+    <div class="container staff-grid">
+      <div class="card"><img src="images/1-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/10-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/3-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/4-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/5-Photoroom.png" alt="นักศึกษา"></div>
+    </div>
+
+    <div class="container staff-grid">
+      <div class="card"><img src="images/2-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/6-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/7-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/8-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/12-Photoroom.png" alt="นักศึกษา"></div>
+    </div>
+
+    <div class="container staff-grid">
+      <div class="card"><img src="images/9-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/11-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/13-Photoroom.png" alt="นักศึกษา"></div>
+      <div class="card"><img src="images/14-Photoroom.png" alt="นักศึกษา"></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 แผนกเทคโนโลยีธุรกิจดิจิทัล</p>
+  </footer>
+</body>
+</html>

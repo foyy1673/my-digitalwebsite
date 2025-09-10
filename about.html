@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>เกี่ยวกับแผนก</title>
+  <style>
+    /* ========== CSS รวมทั้งหมด ========== */
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: #004080;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #004080;
+    }
+
+    header img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    /* Navigation */
+    nav ul {
+      list-style: none;
+      margin: 15px 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #004080;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #0066cc;
+    }
+
+    /* Main container */
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #004080;
+      color: white;
+      font-size: 13px;
+    }
+
+    blockquote {
+      border-left: 4px solid #004080;
+      margin: 15px 0;
+      padding-left: 15px;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 20px;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        width: 95%;
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>เกี่ยวกับแผนก</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="about.html">เกี่ยวกับแผนก</a></li>
+          <li><a href="staff.html">บุคลากร</a></li>
+          <li><a href="curriculum.html">หลักสูตร</a></li>
+          <li><a href="activities.html">ผลงาน & กิจกรรม</a></li>
+          <li><a href="career.html">เส้นทางอาชีพ</a></li>
+          <li><a href="news.html">ข่าวสาร</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>ปรัชญาและวิสัยทัศน์</h2>
+      <blockquote>
+        <p>เราเชื่อว่าคน คือ ปัจจัยหลักของการผลิตทั้งหลายทั้งปวง ดังนั้นการผลิตและพัฒนากำลังคนในด้าน
+        เทคโนโลยีอุตสาหกรรมยานยนต์ ต้องเป็นการร่วมมือกันอย่างต่อเนื่อง และมีมาตรฐานสอดคล้องกับความต้องการ
+        ของภาคอุตสาหกรรมทั้งในเชิงปริมาณและคุณภาพ</p>
+      </blockquote>
+    </div>
+
+    <div class="container">
+      <h2>ประวัติความเป็นมา</h2>
+      <blockquote>
+        <p>วิทยาลัยเทคนิคอุตสาหกรรมยานยนต์ จัดตั้งขึ้นเมื่อวันที่ 9 กรกฎาคม 2539 โดยมีความร่วมมือระหว่าง บริษัท ฮอนด้า ออโตโมบิล (ประเทศไทย) จำกัด กับสำนักงานคณะกรรมการการอาชีวศึกษา กระทรวงศึกษาธิการ มีปรัชญาที่ว่า “เราเชื่อว่าคน คือ ปัจจัยหลักของการผลิตทั้งหลายทั้งปวง”</p>
+      </blockquote>
+    </div>
+
+    <div class="container">
+      <h2>พันธกิจ</h2>
+      <ul>
+        <li>สร้างระบบความร่วมมือในการจัดการอาชีวศึกษา ให้ผู้ใช้และผู้ผลิตกำลังคนได้ประสานกันอย่างใกล้ชิด</li>
+        <li>สร้างรูปแบบและวิธีการในการฝึกอบรมและพัฒนากำลังคนด้านอุตสาหกรรมยานยนต์ให้เป็นระบบที่ทันสมัยและเป็นสากล</li>
+        <li>จัดการเรียนการสอนนักศึกษาระดับ ปวส. และระดับที่สูงกว่า ในสาขาวิชาต่างๆ ด้านอุตสาหกรรมยานยนต์</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>ขอบเขตการเรียนการสอน / ความเชี่ยวชาญ</h2>
+      <p>นักศึกษาของแผนกจะได้เรียนรู้และพัฒนาทักษะในด้านต่าง ๆ ดังนี้:</p>
+      <ul>
+        <li><strong>Digital Marketing</strong> การตลาดออนไลน์และการวิเคราะห์พฤติกรรมผู้บริโภค</li>
+        <li><strong>E-Commerce</strong> การจัดการร้านค้าออนไลน์และระบบขายสินค้า</li>
+        <li><strong>Data Analytics & Business Intelligence</strong> การวิเคราะห์ข้อมูลเพื่อสนับสนุนการตัดสินใจ</li>
+        <li><strong>Social Media Marketing</strong> การวางแผนและจัดการสื่อสังคมออนไลน์</li>
+        <li><strong>การจัดการธุรกิจออนไลน์</strong> การบริหารธุรกิจแบบดิจิทัลเต็มรูปแบบ</li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h2>จุดเด่นของแผนก</h2>
+      <ul>
+        <li>การเรียนการสอนแบบ <strong>Theory + Practice</strong> ผสมผสานทั้งการเรียนรู้ในห้องเรียนและโครงการจริง</li>
+        <li>มี <strong>ห้องปฏิบัติการคอมพิวเตอร์</strong> และ <strong>ซอฟต์แวร์ธุรกิจ</strong> พร้อมใช้งาน</li>
+        <li>ความร่วมมือกับ <strong>บริษัทและองค์กรภายนอก</strong> เพื่อฝึกงานและทำโครงการจริง</li>
+        <li>จัดกิจกรรมพิเศษ เช่น <strong>Digital Business Camp</strong>, <strong>Startup Hackathon</strong>, <strong>Workshop ด้าน Marketing & Analytics</strong></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 แผนกเทคโนโลยีธุรกิจดิจิทัล</p>
+  </footer>
+</body>
+</html>

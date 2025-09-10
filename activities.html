@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ผลงานและกิจกรรม</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f9;
+      color: #333;
+    }
+
+    header {
+      background: #004080;
+      color: #004080;
+      padding: 15px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      display: inline-block;
+    }
+
+    header img {
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 15px 0 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      color: #004080;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background: #0066cc;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    }
+
+    h2, h4 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #004080;
+      padding-bottom: 5px;
+    }
+
+    /* ========== Gallery Grid ========== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background: #f9f9f9;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .gallery-item-content {
+      padding: 10px 15px;
+    }
+
+    .gallery-item-content a {
+      color: #004080;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .gallery-item-content a:hover {
+      text-decoration: underline;
+    }
+
+    .gallery-item-content p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #004080;
+      color: white;
+      font-size: 13px;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+    <div class="container">
+      <h1>ผลงานและกิจกรรม      </h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">หน้าหลัก</a></li>
+          <li><a href="about.html">เกี่ยวกับแผนก</a></li>
+          <li><a href="staff.html">บุคลากร</a></li>
+          <li><a href="curriculum.html">หลักสูตร</a></li>
+          <li><a href="activities.html">ผลงาน & กิจกรรม</a></li>
+          <li><a href="career.html">เส้นทางอาชีพ</a></li>
+          <li><a href="news.html">ข่าวสาร</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h2>ผลงานและกิจกรรม</h2>
+      <div class="gallery-grid">
+        <!-- กิจกรรม 1 -->
+        <div class="gallery-item">
+          <img src="images/1.jpg" alt="กิจกรรม 1">
+          <div class="gallery-item-content">
+            <a href="https://www.aitc.ac.th/?view=article&id=366">"อยุธยาประกาศก้องความเป็นเมืองมรดกโลก" จัดแถลงข่าวเตรียมจัดงานยอยศยิ่งฟ้า</a>
+            <p>06 ธันวาคม 2567</p>
+            <p>เชิญชวนให้ทุกภาคส่วนร่วมกันแต่งชุดไทย สวมผ้าไทย ตลอดเดือนธันวาคม 2567</p>
+          </div>
+        </div>
+
+        <!-- กิจกรรม 2 -->
+        <div class="gallery-item">
+          <img src="images/2.png" alt="กิจกรรม 2">
+          <div class="gallery-item-content">
+            <a href="https://www.aitc.ac.th/?view=article&id=365">ประชาสัมพันธ์ การใช้งาน Email นักศึกษา รหัส 66</a>
+            <p>06 ธันวาคม 2567</p>
+          </div>
+        </div>
+
+        <!-- กิจกรรม 3 -->
+        <div class="gallery-item">
+          <img src="images/3.jpg" alt="กิจกรรม 3">
+          <div class="gallery-item-content">
+            <a href="https://www.aitc.ac.th/?view=article&id=356">ประชุมคณะกรรมการพหุภาคีฯ</a>
+            <p>04 ธันวาคม 2567</p>
+            <p>เข้าร่วมประชุมเพื่อติดตามตรวจสอบการปฎิบัติตามแผนปฏิบัติการด้านสิ่งแวดล้อม</p>
+          </div>
+        </div>
+
+        <!-- กิจกรรม 4 -->
+        <div class="gallery-item">
+          <img src="images/4.jpg" alt="กิจกรรม 4">
+          <div class="gallery-item-content">
+            <a href="https://www.aitc.ac.th/?view=article&id=326">สัมมนาเชิงปฏิบัติการ ประจำปีงบประมาณ 2567</a>
+            <p>19 ตุลาคม 2567</p>
+          </div>
+        </div>
+
+        <!-- กิจกรรม 5 -->
+        <div class="gallery-item">
+          <img src="images/5.png" alt="กิจกรรม 5">
+          <div class="gallery-item-content">
+            <a href="https://www.aitc.ac.th/?view=article&id=254">รวมภาพโครงการและกิจกรรม เดือนตุลาคม 2566</a>
+            <p>06 ธันวาคม 2566</p>
+          </div>
+        </div>
+
+        <!-- กิจกรรม 6 -->
+        <div class="gallery-item">
+          <img src="images/6.png" alt="กิจกรรม 6">
+          <div class="gallery-item-content">
+            <a href="https://www.aitc.ac.th/?view=article&id=249">ประชาสัมพันธ์นักศึกษาฝึกอาชีพในสถานประกอบการ</a>
+            <p>17 พฤศจิกายน 2566</p>
+          </div>
+        </div>
+
+        <!-- กิจกรรม 7 -->
+        <div class="gallery-item">
+          <img src="images/7.png" alt="กิจกรรม 7">
+          <div class="gallery-item-content">
+            <a href="https://www.aitc.ac.th/?view=article&id=248">เพลง : อาชีวะ Proud "สร้างคน สร้างงาน สร้างชาติ สร้างโลก"</a>
+            <p>17 พฤศจิกายน 2566</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 แผนกเทคโนโลยีธุรกิจดิจิทัล</p>
+  </footer>
+</body>
+</html>
